@@ -60,6 +60,10 @@ body {
     padding: 20px 80px;
     background: #d3e9fe;
     box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 #navbar { /*Brings list elements in single line*/
@@ -97,4 +101,44 @@ body {
     position: absolute;
     bottom: -4px;
     left: 20px;
+}
+
+/*home files*/
+#hero {
+    background-image: url("img/hero2.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+    height: 100vh;
+}
+
+#hero h4{
+  padding: 15 px;
+}
+
+#hero h1{
+  color: #7e35d2;
+}
+
+#hero p{
+  font-weight: 500;
+}
+
+#hero button{
+  background-image: url("img/button.png");
+  background-color: transparent;
+  color: #7e35d2;
+  border: 0;
+  padding: 14px 80px 14px 65px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
 }
