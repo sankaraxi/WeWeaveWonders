@@ -128,6 +128,15 @@ body {
     left: 20px;
 }
 
+#mobile-nav{
+    display: none;
+    align-items: center;    
+}
+
+#close{
+  display: none;
+}
+
 /*home files*/
 #hero {
     background-image: url("img/hero2.png");
@@ -344,7 +353,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   background-image: url("img/banner/background2.jpg");
-  min-width: 580px;
+  min-width: 49%;
   height: 50vh;
   background-size: cover;
   background-position: center;
@@ -538,3 +547,167 @@ footer .copyright{
   text-align: center;
 }
 
+
+@media (max-width:799px) {
+  .section-p1 {
+    padding: 40px 40px;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top:0;
+    right:-300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #d3e9fe;
+    box-shadow: 0 40px 60px rgba(0,0,0,0.1);
+    padding: 80px 0 0 10px;
+    transition: 0.3s ease;
+  }
+
+  #navbar.active{
+    right: 0;
+  }
+
+  #navbar li{
+    margin-bottom: 25px;
+  }
+
+  #mobile-nav{
+    display: flex;
+    align-items: center;    
+  }
+
+  #mobile-nav i{
+    font-size: 24px;
+    color: #1a1a1a;
+    padding-left:20px
+  }
+
+  #close{
+    display: initial;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #222;
+    font-size: 24px;
+  }
+
+  #lg-cart{
+    display: none;
+  }
+
+  #hero {
+    height: 70vh;
+    padding: 0 80px;
+   background-position: top 30% right 30%;
+}
+
+#feature {
+  justify-content: center;
+}
+
+#feature .fe-box {
+  margin: 15px 15px;
+}
+
+#products1 .pro-container {
+  justify-content: center;
+}
+#products1 .pro {
+  margin: 15px 15px;
+}
+
+#banner {
+  height: 20vh;
+}
+
+#smaller-banner .banner-box {
+  min-width: 100%;
+  height: 30vh;
+}
+
+#text-banner {
+  padding: 0 40px;
+}
+
+#text-banner .banner-box {
+  width: 100%;
+  height: 20vh;
+}
+
+#newsletter .form {
+  width: 70%;
+}
+
+footer .icon{
+  font-size: 30px;
+}
+}
+
+@media (max-width: 477px) {
+
+  .section-p1 {
+    padding: 20px;
+  }
+
+  #header {
+    padding: 10px 30px;
+  }
+
+  h1{
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+
+  #hero {
+    padding: 0 20px;
+    background-position: 55%;
+}
+
+#feature {
+  justify-content: space-between;
+} 
+
+#feature .fe-box {
+  width: 160px;
+  margin: 0 0 15px 0;
+}
+
+#products1 .pro {
+  width:100%;
+}
+
+#banner{
+  height: 40vh;
+}
+
+#smaller-banner .banner-box {
+  height: 40vh;
+}
+
+#smaller-banner .banner-box2 {
+  margin-top:20px;
+}
+
+#text-banner {
+  padding: 0 20px;
+}
+
+#newsletter{
+  padding:40px 20px;
+} 
+
+#newsletter .form {
+  width: 100%;
+}
+footer .copyright{
+  text-align: start;
+}
+}
