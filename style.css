@@ -377,3 +377,45 @@ body {
 
 #smaller-banner .banner-box2{
   background-image:  url("img/banner/background3.jpg");
+}
+
+#text-banner{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 80px;
+}
+
+#text-banner .banner-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("img/banner/background4.jpg");
+  min-width: 30%;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#text-banner h2{
+  color: #fff;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+#text-banner h3{
+  color: #141414;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+#text-banner .banner-box2{
+  background-image:  url("img/banner/background5.jpg");
+}
+
+#text-banner .banner-box3{
+  background-image:  url("img/banner/background6.jpg");
+}
