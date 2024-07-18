@@ -733,6 +733,52 @@ footer .copyright{
   z-index: -1;
 }
 
+/*End of style for blog.html*/
+
+/*start of style for about.html*/
+
+#page-header.about-header{
+  background-image: url("img/about/banner.png");
+}
+
+#about-hero{
+  display: flex;
+  align-items: center;
+}
+
+#about-hero img{
+  width:50%;
+  height: auto;
+}
+
+#about-hero div{
+  padding-left: 40px;
+}
+
+#about-hero div p{
+  line-height: 20px;
+}
+
+#about-hero marquee{
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+#about-app h1{
+  text-align: center;
+}
+
+#about-app .video{
+  width: 70%;
+  height: 100%;
+  margin: 30px auto 0 auto;
+}
+
+#about-app .video video{
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
 @media (max-width:799px) {
   .section-p1 {
     padding: 40px 40px;
@@ -938,5 +984,33 @@ footer .copyright{
 #page-header h2 {
   font-size: 27px;
   font-weight: 700;
+}
+
+/* About Page */
+
+#about-hero {
+  flex-direction: column;
+}
+
+#about-hero img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#about-hero div {
+  padding: 0px;
+}
+
+#about-app h1 {
+  font-size: 30px;
+  text-align: center;
+}
+
+#about-app .video {
+  width: 100%;
+}
+
+#about-app .video video{
+  border-radius: 20px;
 }
 }
